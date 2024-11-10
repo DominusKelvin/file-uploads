@@ -33,13 +33,6 @@ export default function MultipleUploads() {
         {form.errors.productImages && (
           <p className="text-red-500">{form.errors.productImages}</p>
         )}
-        {data.productImages.length > 0 && (
-          <ul>
-            {data.productImages.map((file, index) => (
-              <li key={index}>File selected: {file.name}</li>
-            ))}
-          </ul>
-        )}
         {progress && progress.percentage && (
           <progress value={progress.percentage} max="100">
             {progress.percentage}%
