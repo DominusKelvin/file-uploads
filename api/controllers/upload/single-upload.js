@@ -1,5 +1,5 @@
 module.exports = {
-  friendlyName: 'Simple upload',
+  friendlyName: 'Single upload',
 
   files: ['avatar'],
 
@@ -40,6 +40,6 @@ module.exports = {
 
     sails.log(uploadedAvatar)
 
-    return '/simple-upload'
+    return '/single-upload'
   }
 }

@@ -20,7 +20,8 @@
     "sails-hook-orm": "^4.0.3",
     "sails-hook-sockets": "^3.0.1",
     "sails-hook-uploads": "^0.4.3",
-    "sails-hook-wish": "^0.0.9"
+    "sails-hook-wish": "^0.0.9",
+    "skipper-s3": "^0.6.0"
   },
   "devDependencies": {
     "@rsbuild/plugin-react": "^1.0.2",

@@ -57,6 +57,20 @@ module.exports = {
     //  ```
     //--------------------------------------------------------------------------
   },
+  /**************************************************************************
+   *                                                                         *
+   * Configure your file uploads settings for production.                    *
+   *                                                                         *
+   * (http://sailsjs.com/config/uploads)                                      *
+   *                                                                         *
+   ***************************************************************************/
+  uploads: {
+    adapter: require('skipper-s3'),
+    key: process.env.R2_ACCESS_KEY,
+    secret: process.env.R2_SECRET_KEY,
+    bucket: process.env.R2_BUCKET,
+    endpoint: process.env.R2_ENDPOINT
+  },
 
   models: {
     /**************************************************************************

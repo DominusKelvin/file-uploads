@@ -55,6 +55,23 @@ module.exports.routes = {
   /**
    * Uploads
    */
-  'GET /simple-upload': 'upload/view-simple-upload',
-  'POST /simple-upload': 'upload/simple-upload'
+
+  // Single file uploads
+  'GET /single-upload': 'upload/view-single-upload',
+  'POST /single-upload': 'upload/single-upload',
+
+  // Multiple file uploads
+  'GET /multiple-uploads': 'upload/view-multiple-uploads',
+  'POST /multiple-uploads': 'upload/multiple-uploads',
+
+  // Upload with fields and files
+  'GET /upload-with-fields': 'upload/view-upload-with-fields',
+  'POST /upload-with-fields': 'upload/upload-with-fields',
+
+  // Upload with complex fields and files
+  'GET /upload-with-complex-fields': 'upload/view-upload-with-complex-fields',
+  'POST /upload-with-complex-fields': 'upload/upload-with-complex-fields',
+
+  // Testing multiple file uploads with EJS
+  'GET /test': { view: 'pages/multiple-uploads' }
 }

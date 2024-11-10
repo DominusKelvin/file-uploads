@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple files | Sails & TBJS File Upload</title>
+  </head>
+  <body>
+    <div class="flex h-screen flex-col items-center justify-center space-y-4">
+      <form
+        action="/multiple-uploads"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <input type="file" name="productImages" multiple />
+
+        <button type="submit" class="input-button">
+          Upload Product Images
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

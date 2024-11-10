@@ -1,7 +1,7 @@
 module.exports = {
-  friendlyName: 'View simple upload',
+  friendlyName: 'View single upload',
 
-  description: 'Display "Simple upload" page.',
+  description: 'Display "Single upload" page.',
 
   exits: {
     success: {
@@ -12,7 +12,7 @@ module.exports = {
   fn: async function () {
     // Respond with view.
     return {
-      page: 'upload/simple-upload'
+      page: 'upload/single-upload'
     }
   }
 }
