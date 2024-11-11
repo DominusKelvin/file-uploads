@@ -27,15 +27,13 @@ module.exports.uploads = {
    *                                                                          *
    ***************************************************************************/
   // dirpath: '.tmp/uploads',
-
   /**
    * Amazon S3
    */
-  adapter: require('skipper-s3'),
-  key: process.env.S3_ACCESS_KEY,
-  secret: process.env.S3_SECRET_KEY,
-  bucket: process.env.S3_BUCKET
-
+  // adapter: require('skipper-s3'),
+  // key: process.env.S3_ACCESS_KEY,
+  // secret: process.env.S3_SECRET_KEY,
+  // bucket: process.env.S3_BUCKET
   /**
    * Cloudflare R2
    */

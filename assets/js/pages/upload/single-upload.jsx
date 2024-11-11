@@ -18,6 +18,11 @@ export default function SimpleUpload() {
         onSubmit={handleSubmit}
         className="flex h-screen flex-col items-center justify-center space-y-4"
       >
+        {form.recentlySuccessful && (
+          <div className="mb-4 w-full rounded border border-green-400 bg-green-100 p-2 text-center text-green-700">
+            Upload successful!
+          </div>
+        )}
         <input
           type="file"
           onChange={(e) => setData('avatar', e.target.files[0])}
