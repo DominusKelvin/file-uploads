@@ -36,16 +36,16 @@ export default function useFormWithUploads(initialData) {
     return formData
   }
 
-  const submitWithUploads = (method, url) => {
+  const submitWithUploads = (method, url, options) => {
     form.transform(transformDataToFormData)
-    form.submit(method, url)
+    form.submit(method, url, options)
   }
 
-  const post = (url) => submitWithUploads('post', url)
-  const get = (url) => submitWithUploads('get', url)
-  const put = (url) => submitWithUploads('put', url)
-  const patch = (url) => submitWithUploads('patch', url)
-  const del = (url) => submitWithUploads('delete', url)
+  const post = (url, options) => submitWithUploads('post', url, options)
+  const get = (url, options) => submitWithUploads('get', url, options)
+  const put = (url, options) => submitWithUploads('put', url, options)
+  const patch = (url, options) => submitWithUploads('patch', url, options)
+  const del = (url, options) => submitWithUploads('delete', url, options)
 
   return {
     ...form,
